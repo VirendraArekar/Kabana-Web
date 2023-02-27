@@ -12,7 +12,8 @@ const Accordion = ({ title, content }: AccordionProps) => {
 
   const HandleOpening = () => {
     setOpened(!isOpened)
-    setHeight(!isOpened ? `${contentElement.current.scrollHeight +10}px` : "0px")
+    // setHeight(!isOpened ? `${contentElement.current.scrollHeight + 10}px` : "0px")
+    setHeight(!isOpened ? `${60 + 10}px` : "0px")
   }
   return (
     <div onClick={HandleOpening} className="border rounded rounded-lg border-[#232323] w-2/3 my-1 shadow-inner">
@@ -24,6 +25,7 @@ const Accordion = ({ title, content }: AccordionProps) => {
             :
             <img src={PlusImg} className="h-4 my-1.5"/>
         }
+
       </div>
 
       <div
