@@ -24,7 +24,6 @@ const Accordion = ({ title, content }: AccordionProps) => {
             :
             <img src={PlusImg} className="h-4 my-1.5"/>
         }
-            {console.log('HEIGHT',height)}
       </div>
 
       <div

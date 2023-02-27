@@ -4,7 +4,7 @@ import Twitter from '../../../../public/images/twitter.png';
 import Tiktok from '../../../../public/images/ic_baseline-tiktok.png';
 import Linkedin from '../../../../public/images/uil_linkedin.png'
 
-const Card = (props) => {
+const Card = (props : any) => {
     const {name, image, job} = props;
     return(
       <div className="rounded rounded-lg">

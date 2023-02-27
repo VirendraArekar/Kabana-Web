@@ -1,6 +1,6 @@
 import React from "react";
 
-const SmallButton = (props) =>{
+const SmallButton = (props : any) =>{
     const {type = 'simple', name, image = null} = props;
     return(
       <>
